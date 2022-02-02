@@ -1,0 +1,22 @@
+Server conversation example:
+
+./udpChat.py -c c2 127.0.0.1 1025 2001
+>>> [Welcome, You are registered.]
+>>> [Client table updated.]			./udpChat.py -c c1 127.0.0.1 1025 2000
+>>> 						>>> [Welcome, You are registered.]	
+>>> [Client table updated.]			>>> [Client table updated.]
+>>> 						>>> send c2 hello there		
+>>> c1: hello there				>>> [Message recieved by c2.]					
+>>> send c1 hi					>>> 
+>>> [Message recieved by c1.]			>>> c2: hi
+>>> 						>>> dereg c1
+>>> [Client table updated.]			>>> [You are offline. Bye.]
+>>> send c1 are you there?			>>> reg c1
+>>> [Message recieved by server, user offline.]	
+>>> 						>>> 
+>>> [Client table updated.]			>>> [Client table updated.]
+>>> 						>>>
+						>>> You have messages
+						>>> 2021-06-03 18:28:53 c2: are you there?
+						
+						>>>
