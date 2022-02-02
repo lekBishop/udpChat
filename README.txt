@@ -1,5 +1,5 @@
-README CSEE4119 PA1
-Liam Bishop (lb3306)
+Liam Bishop
+A simple python chat using UDP
 
 Command Line Instructions:
 	- No need to compile python script
